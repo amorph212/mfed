@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+}
+p {
+  position: absolute;
+  background-color: violet;
+  top: 50%;
+  margin: 0;
+}
+#p1 {
+  left: 30%;
+}
+
+#p2 {
+  right: 30%;
+}

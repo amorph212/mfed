@@ -1,0 +1,31 @@
+/* CSS stylesheet for Grid Layout 
+author: Andrea Kubcová */
+
+#wrapper { /*main grid container */
+    display: grid;
+} 
+
+#page-header {
+    grid-area: page-header;
+
+}
+
+#navbar {
+    grid-area: navbar;
+    
+}
+
+#page-content {
+    grid-area: page-content;
+    
+}
+
+#sidebar {
+    grid-area: sidebar;
+    
+}
+
+#page-footer {
+    grid-area: footer;
+    
+}

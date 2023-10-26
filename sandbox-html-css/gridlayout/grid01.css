@@ -1,0 +1,145 @@
+/* CSS stylesheet for Grid Layout 
+author: Andrea Kubcová */
+
+body {
+}
+
+#wrapper { /*main grid container, mobile first - one column */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "ph"
+    "nb"
+    "pc"
+    "sb"
+    "pf";
+    margin: auto;
+    gap: 10px;
+} 
+
+#page-header {
+    grid-area: ph;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+}
+
+#navbar {
+    grid-area: nb;
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+    
+}
+
+#page-content {
+    grid-area: pc;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+    
+}
+
+#sidebar {
+    grid-area: sb;
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+    
+}
+
+#page-footer {
+    grid-area: pf;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+    
+}
+
+.page-title{
+
+}
+
+section {
+    border: 1px dashed black;
+    margin: 5px auto;
+    padding: 5px;
+    background-color: linen;
+
+}
+.section-header{
+    
+    
+}
+
+article {
+    border: 1px dotted black;
+    margin: 5px auto;
+    padding: 5px;
+    background-color: lightpink;
+}
+
+.article-header{
+    
+}
+
+@media screen and (max-width: 600px) { /* breakpoint, screen smaller than 600px - XS*/
+    body {
+        background-color: lavenderblush ; /* hamburger menu */
+    }
+    
+}
+
+@media screen and (min-width: 600px) { /* breakpoint, screen bigger than 600px - S*/
+    body {
+        background-color: lavender; 
+    }
+    
+}
+
+@media screen and (min-width: 768px) { /* breakpoint, screen bigger than 768px - M */
+
+    body {
+        background-color: violet;
+    }
+    .articles { /* articles display via flexbox, better to use grid layout to have same width of items*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    article {
+        flex: 0 0 calc(95% / 2 - ((2 - 1) * 10px / 2)); /* calculation for distributing flexbox items width equaly, calc(100% / $n - (($n - 1) * $gap / $n)), n - number of rows, gap - margin between them */
+    }
+
+}
+
+@media screen and (min-width: 992px) { /* breakpoint, screen bigger than 992px - L */
+    body {
+        background-color: blueviolet; 
+    }
+    
+    #wrapper { /* full layout - two columns */
+        grid-template-columns: 4fr 1fr ;
+        grid-template-areas:
+        "ph ph"
+        "nb nb"
+        "pc sb"
+        "pf pf";
+    }
+}
+
+@media screen and (min-width: 1200px) { /* breakpoint, screen bigger than 1200px - XL */
+    body {
+        background-color: purple;
+    }
+    #wrapper { /* max width of wrapper*/
+        max-width: 80%;
+
+    }
+}

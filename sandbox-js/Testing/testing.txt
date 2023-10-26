@@ -1,0 +1,42 @@
+/* 
+Conciseness, clarity, repeatability
+Stručnost (výstižnost, konkrétnost), přehlednost (jasnost), opakovatelnost
+Refactoring - updating the code without affecting the results it produces
+Red-green-refactor cycle
+*/
+
+/* Test Driven Development (TDD)
+1) Write failing test
+2) Re-write code to pass
+3) Optimize code without changing its results
+*/
+
+/* 
+e2e testing 
+- from the perspective of the end user
+- slow and time consuming
+- tester does not have to be the developer
+- frameworks: WebdriverJS, Protractor, Cypress
+
+Integration testing
+- tests how separate parts of the app interacts
+- faster, cheaper
+- tools: React testing library, Enzyne
+
+Unit testing
+- testing of small unit of code in isolation (separately)
+- self-contained, fast to run, easy to write
+*/
+
+/*Testing pyramid
+1) Unit tests
+2) Integration tests
+3) e2e tests
+*/
+
+/* 
+Libraries for testing Java Script:
+Jasmine, Mocha, Karma, qUnit
+Frameworks for testing Java Script:
+Jest
+*/

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Form</title>
+</head>
+
+<body>
+  <h2>Meeting reservation</h2>
+  <form class="" action="index.html" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" value=""><br>
+    <label for="phone">Telephone:</label>
+    <input type="tel" id="phone" name="tel" value=""><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" value=""><br>
+    <label for="fdate">Date:</label>
+    <input type="fdate" id="fdate"><br>
+    <label for="ftime">Time:</label>
+    <input type="time" id="ftime"><br>
+    Are you new customer?
+    <input type="radio" id="fnewy" name="fnew" value="Yes">
+    <label for="fnewy">Yes</label>
+    <input type="radio" id="fnewn" name="fnew" value="No">
+    <label for="fnewn">No</label><br>
+    What do you prefer?
+    <input type="checkbox" id="online" name="online" value="Online">
+    <label for="online">Online meeeting</label>
+    <input type="checkbox" id="live" name="live" value="Live">
+    <label for="live">Live meeting</label><br>
+    <label for="motivation">Your motivation:</label>
+    <input type="range" id="motivation" name="motivation" value="motivation"><br>
+    <textarea name="motivationt" rows="8" cols="40"></textarea><br>
+    <label for="cv">Your CV:</label>
+    <input type="file" id="cv" name="cv" value=""><br>
+    <label for="bio">Your bio on LinkedIn:</label>
+    <input type="url" id="bio" name="bio" value=""><br>
+    <label for="age">Your age</label>
+    <input list="age">
+    <datalist id="age">
+      <option value="20-30">
+      <option value="31-40">
+      <option value="41-50">
+      <option value="51-60">
+      <option value="61-">
+    </datalist><br>
+    <input type="submit" name="send" value="Send">
+    <input type="reset" name="reset" value="Reset">
+  </form>
+
+</body>
+
+</html>

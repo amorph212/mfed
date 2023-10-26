@@ -1,0 +1,31 @@
+Passed: getPrices method applies tax when taxBoolean parameter is true
+FAILED Test Case: getPrices method does not apply tax when taxBoolean parameter is false
+Your Code Produced:
+You need to pass a boolean to the getPrices call!\nExpected Output Is:
+Dish: Italian pasta Price: $9.55
+Dish: Rice with veggies Price: $8.65
+Dish: Chicken with potatoes Price: $15.55
+Dish: Vegetarian Pizza Price: $6.45
+
+Passed: getPrices method logs expected error message when taxBoolean is not supplied
+Passed: getDiscount method when tax is applied and guests less than 5
+Passed: getDiscount method when tax is applied and guests more than 5
+FAILED Test Case: getDiscount method when tax is not applied and guests less than 5
+Your Code Produced:
+You need to pass a boolean to the getPrices call!\nDiscount is: $5\nExpected Output Is:
+Dish: Italian pasta Price: $9.55
+Dish: Rice with veggies Price: $8.65
+Dish: Chicken with potatoes Price: $15.55
+Dish: Vegetarian Pizza Price: $6.45
+Discount is: $5
+
+FAILED Test Case: getDiscount method when tax is not applied and guests more than 5
+Your Code Produced:
+You need to pass a boolean to the getPrices call!\nDiscount is: $10\nExpected Output Is:
+Dish: Italian pasta Price: $9.55
+Dish: Rice with veggies Price: $8.65
+Dish: Chicken with potatoes Price: $15.55
+Dish: Vegetarian Pizza Price: $6.45
+Discount is: $10
+
+Passed: getDiscount method logs expected error message when guests count not in range
